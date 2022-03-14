@@ -1,11 +1,13 @@
 # robot-framework-docker
 
-Quick Start
-===========
+** ADMIRATION FOR THE UNKNOW **
+
+Before, Keep your motivation and excitement level high!
+=======================================================
 
 ### Clone this repository
 
-    git clone git@github.com:ypasmk/robot-framework-docker.git
+    git clone https://github.com/caeltarifa/automatic_web_testing.git
 
 ### Pull the image.
 
@@ -15,10 +17,12 @@ Quick Start
 
 ##### Method 1: use docker-compose
 
+    dos2unix robot-framework-docker/run-tests.sh && dos2unix robot-framework-docker/run_suite.sh (only windows user for to execute shell)    
     cd robot-framework-docker && docker-compose up
     
 ##### Method 2: use bash
 
+    dos2unix robot-framework-docker/run-tests.sh && dos2unix robot-framework-docker/run_suite.sh (only windows user for to execute shell)
     cd robot-framework-docker && ./run_tests.sh
     
 
@@ -97,9 +101,5 @@ More details here http://navinet.github.io/robotframework-excellibrary/ExcelLibr
 
 
 
-
-**ENJOY**
-
-
-*For any requests or changes please open issues or create pull requests :)*
+**PASSION FOR DISCOVERY**
 
