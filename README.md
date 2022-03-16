@@ -4,6 +4,7 @@
 
 [![PyPI platforms][pypi-platforms]][pypi-link]
 
+PyPI version PyPI platforms
 
 ** ADMIRATION FOR THE UNKNOW **
 
