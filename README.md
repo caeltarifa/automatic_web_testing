@@ -1,6 +1,7 @@
 # Web testing with robot framework
 
 [![PyPI version][pypi-version]][pypi-link]
+
 [![PyPI platforms][pypi-platforms]][pypi-link]
 
 
