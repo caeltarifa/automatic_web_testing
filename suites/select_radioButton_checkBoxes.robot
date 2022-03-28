@@ -7,6 +7,8 @@ Library    XvfbRobot
 ***Variables***
 ${TMP_PATH}    /tmp
 ${url}         https://gallery.wufoo.com/forms/?formname=q192izas04nvc5l&embed=1&embedKey=q192izas04nvc5l840693&entsource=&referrer=https:wuslashwuslashwww.wufoo.comwuslashgallerywuslashtemplateswuslashformswuslash#public
+
+
 ***Test Cases***
 TestingInputBox
     Open Chrome Browser
