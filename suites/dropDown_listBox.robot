@@ -26,11 +26,20 @@ TestingInputBox
     select from list by label    roomstatus       Disabled
     Sleep                        5
     select from list by index    price_type       1
+    
+    
+    unselect from list by index    price_type       1
     ### AFTER LOGIN: TAKE THE VALUE OF A SELECT BY LABEL OR INDEX
 
 
-    ### AFTER LOGIN: TAKE THE VALUE OF A
-    ### AFTER LOGIN: TAKE THE VALUE OF A
+    ### AFTER LOGIN: TAKE THE VALUE OF A SELECT MULTIPLE
+    GoTo                         https://phptravels.net/api/supplier/hotels/add
+    sleep                        5
+    click element                xpath://mwc-tab[@id="POLICY-tab"]
+    select from list by label    hotelpayments[]                                   27
+    select from list by label    hotelpayments[]                                   137
+
+    ### AFTER LOGIN: TAKE THE VALUE OF A SELECT MULTIPLE
 
     close browser
 

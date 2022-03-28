@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20220328 03:50:41.639" generator="Robot 3.1.1 (Python 2.7.12 on linux2)">
+<robot rpa="false" generated="20220328 04:20:56.475" generator="Robot 3.1.1 (Python 2.7.12 on linux2)">
 <suite source="/suites" id="s1" name="Suites">
 <suite source="/suites/accesslogin.robot" id="s1-s1" name="Accesslogin">
 <test id="s1-s1-t1" name="LoginTest">
@@ -10,8 +10,8 @@
 <arg>1920</arg>
 <arg>1080</arg>
 </arguments>
-<msg timestamp="20220328 03:50:43.570" level="INFO">Using virtual display: '1920x1080x24'</msg>
-<status status="PASS" endtime="20220328 03:50:44.472" starttime="20220328 03:50:43.569"></status>
+<msg timestamp="20220328 04:20:57.766" level="INFO">Using virtual display: '1920x1080x24'</msg>
+<status status="PASS" endtime="20220328 04:20:58.683" starttime="20220328 04:20:57.765"></status>
 </kw>
 <kw name="Open Chrome Browser">
 <kw name="Evaluate" library="BuiltIn">
@@ -23,8 +23,8 @@
 <assign>
 <var>${options}</var>
 </assign>
-<msg timestamp="20220328 03:50:44.474" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7fd87d5ec950&gt;</msg>
-<status status="PASS" endtime="20220328 03:50:44.474" starttime="20220328 03:50:44.473"></status>
+<msg timestamp="20220328 04:20:58.686" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f28dc8cebd0&gt;</msg>
+<status status="PASS" endtime="20220328 04:20:58.686" starttime="20220328 04:20:58.685"></status>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -33,7 +33,7 @@
 <arg>add_argument</arg>
 <arg>--no-sandbox</arg>
 </arguments>
-<status status="PASS" endtime="20220328 03:50:44.475" starttime="20220328 03:50:44.475"></status>
+<status status="PASS" endtime="20220328 04:20:58.687" starttime="20220328 04:20:58.686"></status>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
@@ -43,8 +43,8 @@
 <assign>
 <var>${prefs}</var>
 </assign>
-<msg timestamp="20220328 03:50:44.477" level="INFO">${prefs} = {u'download.default_directory': u'/tmp'}</msg>
-<status status="PASS" endtime="20220328 03:50:44.477" starttime="20220328 03:50:44.475"></status>
+<msg timestamp="20220328 04:20:58.688" level="INFO">${prefs} = {u'download.default_directory': u'/tmp'}</msg>
+<status status="PASS" endtime="20220328 04:20:58.688" starttime="20220328 04:20:58.687"></status>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -54,7 +54,7 @@
 <arg>prefs</arg>
 <arg>${prefs}</arg>
 </arguments>
-<status status="PASS" endtime="20220328 03:50:44.478" starttime="20220328 03:50:44.477"></status>
+<status status="PASS" endtime="20220328 04:20:58.689" starttime="20220328 04:20:58.689"></status>
 </kw>
 <kw name="Create Webdriver" library="SeleniumLibrary">
 <doc>Creates an instance of Selenium WebDriver.</doc>
@@ -62,26 +62,26 @@
 <arg>Chrome</arg>
 <arg>chrome_options=${options}</arg>
 </arguments>
-<msg timestamp="20220328 03:50:44.479" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" endtime="20220328 03:50:47.499" starttime="20220328 03:50:44.478"></status>
+<msg timestamp="20220328 04:20:58.690" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" endtime="20220328 04:21:01.299" starttime="20220328 04:20:58.690"></status>
 </kw>
-<status status="PASS" endtime="20220328 03:50:47.500" starttime="20220328 03:50:44.472"></status>
+<status status="PASS" endtime="20220328 04:21:01.300" starttime="20220328 04:20:58.684"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the active browser instance to the provided ``url``.</doc>
 <arguments>
 <arg>https://demo.nopcommerce.com/</arg>
 </arguments>
-<msg timestamp="20220328 03:50:47.503" level="INFO">Opening url 'https://demo.nopcommerce.com/'</msg>
-<status status="PASS" endtime="20220328 03:50:49.681" starttime="20220328 03:50:47.502"></status>
+<msg timestamp="20220328 04:21:01.301" level="INFO">Opening url 'https://demo.nopcommerce.com/'</msg>
+<status status="PASS" endtime="20220328 04:21:03.786" starttime="20220328 04:21:01.300"></status>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://a[@class='ico-login']</arg>
 </arguments>
-<msg timestamp="20220328 03:50:49.683" level="INFO">Clicking link 'xpath://a[@class='ico-login']'.</msg>
-<status status="PASS" endtime="20220328 03:50:50.640" starttime="20220328 03:50:49.682"></status>
+<msg timestamp="20220328 04:21:03.787" level="INFO">Clicking link 'xpath://a[@class='ico-login']'.</msg>
+<status status="PASS" endtime="20220328 04:21:04.703" starttime="20220328 04:21:03.787"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -89,8 +89,8 @@
 <arg>id:Email</arg>
 <arg>pavanoltraining@gmail.com</arg>
 </arguments>
-<msg timestamp="20220328 03:50:50.641" level="INFO">Typing text 'pavanoltraining@gmail.com' into text field 'id:Email'.</msg>
-<status status="PASS" endtime="20220328 03:50:50.826" starttime="20220328 03:50:50.641"></status>
+<msg timestamp="20220328 04:21:04.703" level="INFO">Typing text 'pavanoltraining@gmail.com' into text field 'id:Email'.</msg>
+<status status="PASS" endtime="20220328 04:21:04.925" starttime="20220328 04:21:04.703"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -98,24 +98,24 @@
 <arg>id:Password</arg>
 <arg>Test@123</arg>
 </arguments>
-<msg timestamp="20220328 03:50:50.826" level="INFO">Typing text 'Test@123' into text field 'id:Password'.</msg>
-<status status="PASS" endtime="20220328 03:50:51.030" starttime="20220328 03:50:50.826"></status>
+<msg timestamp="20220328 04:21:04.926" level="INFO">Typing text 'Test@123' into text field 'id:Password'.</msg>
+<status status="PASS" endtime="20220328 04:21:05.129" starttime="20220328 04:21:04.926"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://button[@class="button-1 login-button"]</arg>
 </arguments>
-<msg timestamp="20220328 03:50:51.031" level="INFO">Clicking element 'xpath://button[@class="button-1 login-button"]'.</msg>
-<status status="PASS" endtime="20220328 03:50:51.181" starttime="20220328 03:50:51.030"></status>
+<msg timestamp="20220328 04:21:05.129" level="INFO">Clicking element 'xpath://button[@class="button-1 login-button"]'.</msg>
+<status status="PASS" endtime="20220328 04:21:05.770" starttime="20220328 04:21:05.129"></status>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20220328 03:50:51.278" starttime="20220328 03:50:51.182"></status>
+<status status="PASS" endtime="20220328 04:21:05.843" starttime="20220328 04:21:05.770"></status>
 </kw>
-<status status="PASS" endtime="20220328 03:50:51.279" critical="yes" starttime="20220328 03:50:43.566"></status>
+<status status="PASS" endtime="20220328 04:21:05.844" critical="yes" starttime="20220328 04:20:57.763"></status>
 </test>
-<status status="PASS" endtime="20220328 03:50:51.282" starttime="20220328 03:50:41.693"></status>
+<status status="PASS" endtime="20220328 04:21:05.846" starttime="20220328 04:20:56.535"></status>
 </suite>
 <suite source="/suites/dropDown_listBox.robot" id="s1-s2" name="dropDown listBox">
 <test id="s1-s2-t1" name="TestingInputBox">
@@ -129,8 +129,8 @@
 <assign>
 <var>${options}</var>
 </assign>
-<msg timestamp="20220328 03:50:51.307" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7fd87d34d4d0&gt;</msg>
-<status status="PASS" endtime="20220328 03:50:51.307" starttime="20220328 03:50:51.305"></status>
+<msg timestamp="20220328 04:21:05.864" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f28dc636a10&gt;</msg>
+<status status="PASS" endtime="20220328 04:21:05.864" starttime="20220328 04:21:05.863"></status>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -139,7 +139,7 @@
 <arg>add_argument</arg>
 <arg>--no-sandbox</arg>
 </arguments>
-<status status="PASS" endtime="20220328 03:50:51.308" starttime="20220328 03:50:51.307"></status>
+<status status="PASS" endtime="20220328 04:21:05.866" starttime="20220328 04:21:05.865"></status>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
@@ -149,8 +149,8 @@
 <assign>
 <var>${prefs}</var>
 </assign>
-<msg timestamp="20220328 03:50:51.309" level="INFO">${prefs} = {u'download.default_directory': u'/tmp'}</msg>
-<status status="PASS" endtime="20220328 03:50:51.309" starttime="20220328 03:50:51.308"></status>
+<msg timestamp="20220328 04:21:05.867" level="INFO">${prefs} = {u'download.default_directory': u'/tmp'}</msg>
+<status status="PASS" endtime="20220328 04:21:05.867" starttime="20220328 04:21:05.866"></status>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -160,7 +160,7 @@
 <arg>prefs</arg>
 <arg>${prefs}</arg>
 </arguments>
-<status status="PASS" endtime="20220328 03:50:51.312" starttime="20220328 03:50:51.310"></status>
+<status status="PASS" endtime="20220328 04:21:05.869" starttime="20220328 04:21:05.868"></status>
 </kw>
 <kw name="Create Webdriver" library="SeleniumLibrary">
 <doc>Creates an instance of Selenium WebDriver.</doc>
@@ -168,18 +168,18 @@
 <arg>Chrome</arg>
 <arg>chrome_options=${options}</arg>
 </arguments>
-<msg timestamp="20220328 03:50:51.313" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" endtime="20220328 03:50:53.804" starttime="20220328 03:50:51.312"></status>
+<msg timestamp="20220328 04:21:05.870" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" endtime="20220328 04:21:08.533" starttime="20220328 04:21:05.869"></status>
 </kw>
-<status status="PASS" endtime="20220328 03:50:53.805" starttime="20220328 03:50:51.303"></status>
+<status status="PASS" endtime="20220328 04:21:08.534" starttime="20220328 04:21:05.862"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the active browser instance to the provided ``url``.</doc>
 <arguments>
 <arg>${url_login}</arg>
 </arguments>
-<msg timestamp="20220328 03:50:53.806" level="INFO">Opening url 'https://phptravels.net/api/supplier'</msg>
-<status status="PASS" endtime="20220328 03:50:57.413" starttime="20220328 03:50:53.805"></status>
+<msg timestamp="20220328 04:21:08.536" level="INFO">Opening url 'https://phptravels.net/api/supplier'</msg>
+<status status="PASS" endtime="20220328 04:21:12.339" starttime="20220328 04:21:08.535"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -187,8 +187,8 @@
 <arg>name:email</arg>
 <arg>supplier@phptravels.com</arg>
 </arguments>
-<msg timestamp="20220328 03:50:57.415" level="INFO">Typing text 'supplier@phptravels.com' into text field 'name:email'.</msg>
-<status status="PASS" endtime="20220328 03:50:57.810" starttime="20220328 03:50:57.414"></status>
+<msg timestamp="20220328 04:21:12.343" level="INFO">Typing text 'supplier@phptravels.com' into text field 'name:email'.</msg>
+<status status="PASS" endtime="20220328 04:21:12.769" starttime="20220328 04:21:12.340"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -196,32 +196,32 @@
 <arg>name:password</arg>
 <arg>demosupplier</arg>
 </arguments>
-<msg timestamp="20220328 03:50:57.811" level="INFO">Typing text 'demosupplier' into text field 'name:password'.</msg>
-<status status="PASS" endtime="20220328 03:50:58.136" starttime="20220328 03:50:57.810"></status>
+<msg timestamp="20220328 04:21:12.770" level="INFO">Typing text 'demosupplier' into text field 'name:password'.</msg>
+<status status="PASS" endtime="20220328 04:21:13.118" starttime="20220328 04:21:12.770"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://button[@class="btn btn-primary btn-block ladda-button fadeIn animated mdc-ripple-upgraded"]</arg>
 </arguments>
-<msg timestamp="20220328 03:50:58.137" level="INFO">Clicking element 'xpath://button[@class="btn btn-primary btn-block ladda-button fadeIn animated mdc-ripple-upgraded"]'.</msg>
-<status status="PASS" endtime="20220328 03:50:58.912" starttime="20220328 03:50:58.137"></status>
+<msg timestamp="20220328 04:21:13.119" level="INFO">Clicking element 'xpath://button[@class="btn btn-primary btn-block ladda-button fadeIn animated mdc-ripple-upgraded"]'.</msg>
+<status status="PASS" endtime="20220328 04:21:14.009" starttime="20220328 04:21:13.118"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5</arg>
 </arguments>
-<msg timestamp="20220328 03:51:03.914" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20220328 03:51:03.914" starttime="20220328 03:50:58.913"></status>
+<msg timestamp="20220328 04:21:19.010" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20220328 04:21:19.011" starttime="20220328 04:21:14.009"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the active browser instance to the provided ``url``.</doc>
 <arguments>
 <arg>${url_inside}</arg>
 </arguments>
-<msg timestamp="20220328 03:51:03.915" level="INFO">Opening url 'https://phptravels.net/api/supplier/hotels/rooms/add'</msg>
-<status status="PASS" endtime="20220328 03:51:06.370" starttime="20220328 03:51:03.915"></status>
+<msg timestamp="20220328 04:21:19.011" level="INFO">Opening url 'https://phptravels.net/api/supplier/hotels/rooms/add'</msg>
+<status status="PASS" endtime="20220328 04:21:24.198" starttime="20220328 04:21:19.011"></status>
 </kw>
 <kw name="Select From List By Label" library="SeleniumLibrary">
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
@@ -229,16 +229,16 @@
 <arg>roomstatus</arg>
 <arg>Disabled</arg>
 </arguments>
-<msg timestamp="20220328 03:51:06.372" level="INFO">Selecting options from selection list 'roomstatus' by label Disabled.</msg>
-<status status="PASS" endtime="20220328 03:51:06.542" starttime="20220328 03:51:06.371"></status>
+<msg timestamp="20220328 04:21:24.200" level="INFO">Selecting options from selection list 'roomstatus' by label Disabled.</msg>
+<status status="PASS" endtime="20220328 04:21:24.353" starttime="20220328 04:21:24.199"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5</arg>
 </arguments>
-<msg timestamp="20220328 03:51:11.544" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20220328 03:51:11.544" starttime="20220328 03:51:06.543"></status>
+<msg timestamp="20220328 04:21:29.354" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20220328 04:21:29.355" starttime="20220328 04:21:24.354"></status>
 </kw>
 <kw name="Select From List By Index" library="SeleniumLibrary">
 <doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
@@ -246,16 +246,53 @@
 <arg>price_type</arg>
 <arg>1</arg>
 </arguments>
-<msg timestamp="20220328 03:51:11.545" level="INFO">Selecting options from selection list 'price_type' by index 1.</msg>
-<status status="PASS" endtime="20220328 03:51:11.730" starttime="20220328 03:51:11.545"></status>
+<msg timestamp="20220328 04:21:29.356" level="INFO">Selecting options from selection list 'price_type' by index 1.</msg>
+<status status="PASS" endtime="20220328 04:21:29.581" starttime="20220328 04:21:29.355"></status>
 </kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20220328 03:51:11.811" starttime="20220328 03:51:11.730"></status>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>https://phptravels.net/api/supplier/hotels/add</arg>
+</arguments>
+<msg timestamp="20220328 04:21:29.582" level="INFO">Opening url 'https://phptravels.net/api/supplier/hotels/add'</msg>
+<status status="PASS" endtime="20220328 04:21:36.646" starttime="20220328 04:21:29.581"></status>
 </kw>
-<status status="PASS" endtime="20220328 03:51:11.811" critical="yes" starttime="20220328 03:50:51.301"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20220328 04:21:41.648" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20220328 04:21:41.648" starttime="20220328 04:21:36.647"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://mwc-tab[@id="POLICY-tab"]</arg>
+</arguments>
+<msg timestamp="20220328 04:21:41.650" level="INFO">Clicking element 'xpath://mwc-tab[@id="POLICY-tab"]'.</msg>
+<status status="PASS" endtime="20220328 04:21:41.831" starttime="20220328 04:21:41.649"></status>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>hotelpayments[]</arg>
+<arg>27</arg>
+</arguments>
+<msg timestamp="20220328 04:21:41.834" level="INFO">Selecting options from selection list 'hotelpayments[]' by label 27.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20220328 04:21:42.331" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-44.png"&gt;&lt;img src="selenium-screenshot-44.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220328 04:21:42.331" starttime="20220328 04:21:41.935"></status>
+</kw>
+<msg timestamp="20220328 04:21:42.333" level="FAIL">NoSuchElementException: Message: Could not locate element with visible text: 27
+</msg>
+<status status="FAIL" endtime="20220328 04:21:42.334" starttime="20220328 04:21:41.832"></status>
+</kw>
+<status status="FAIL" endtime="20220328 04:21:42.335" critical="yes" starttime="20220328 04:21:05.860">NoSuchElementException: Message: Could not locate element with visible text: 27
+</status>
 </test>
-<status status="PASS" endtime="20220328 03:51:11.815" starttime="20220328 03:50:51.290"></status>
+<status status="FAIL" endtime="20220328 04:21:42.338" starttime="20220328 04:21:05.852"></status>
 </suite>
 <suite source="/suites/handleInputBox.robot" id="s1-s3" name="handleInputBox">
 <test id="s1-s3-t1" name="TestingInputBox">
@@ -269,8 +306,8 @@
 <assign>
 <var>${options}</var>
 </assign>
-<msg timestamp="20220328 03:51:11.833" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7fd87d357d50&gt;</msg>
-<status status="PASS" endtime="20220328 03:51:11.833" starttime="20220328 03:51:11.832"></status>
+<msg timestamp="20220328 04:21:42.360" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f28dc5fa3d0&gt;</msg>
+<status status="PASS" endtime="20220328 04:21:42.360" starttime="20220328 04:21:42.359"></status>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -279,7 +316,7 @@
 <arg>add_argument</arg>
 <arg>--no-sandbox</arg>
 </arguments>
-<status status="PASS" endtime="20220328 03:51:11.835" starttime="20220328 03:51:11.834"></status>
+<status status="PASS" endtime="20220328 04:21:42.361" starttime="20220328 04:21:42.361"></status>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
@@ -289,8 +326,8 @@
 <assign>
 <var>${prefs}</var>
 </assign>
-<msg timestamp="20220328 03:51:11.836" level="INFO">${prefs} = {u'download.default_directory': u'/tmp'}</msg>
-<status status="PASS" endtime="20220328 03:51:11.836" starttime="20220328 03:51:11.835"></status>
+<msg timestamp="20220328 04:21:42.362" level="INFO">${prefs} = {u'download.default_directory': u'/tmp'}</msg>
+<status status="PASS" endtime="20220328 04:21:42.362" starttime="20220328 04:21:42.361"></status>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -300,7 +337,7 @@
 <arg>prefs</arg>
 <arg>${prefs}</arg>
 </arguments>
-<status status="PASS" endtime="20220328 03:51:11.838" starttime="20220328 03:51:11.837"></status>
+<status status="PASS" endtime="20220328 04:21:42.363" starttime="20220328 04:21:42.363"></status>
 </kw>
 <kw name="Create Webdriver" library="SeleniumLibrary">
 <doc>Creates an instance of Selenium WebDriver.</doc>
@@ -308,18 +345,18 @@
 <arg>Chrome</arg>
 <arg>chrome_options=${options}</arg>
 </arguments>
-<msg timestamp="20220328 03:51:11.839" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" endtime="20220328 03:51:14.334" starttime="20220328 03:51:11.838"></status>
+<msg timestamp="20220328 04:21:42.364" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" endtime="20220328 04:21:45.080" starttime="20220328 04:21:42.363"></status>
 </kw>
-<status status="PASS" endtime="20220328 03:51:14.335" starttime="20220328 03:51:11.831"></status>
+<status status="PASS" endtime="20220328 04:21:45.086" starttime="20220328 04:21:42.358"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the active browser instance to the provided ``url``.</doc>
 <arguments>
 <arg>https://demo.nopcommerce.com/</arg>
 </arguments>
-<msg timestamp="20220328 03:51:14.336" level="INFO">Opening url 'https://demo.nopcommerce.com/'</msg>
-<status status="PASS" endtime="20220328 03:51:17.899" starttime="20220328 03:51:14.335"></status>
+<msg timestamp="20220328 04:21:45.090" level="INFO">Opening url 'https://demo.nopcommerce.com/'</msg>
+<status status="PASS" endtime="20220328 04:21:47.155" starttime="20220328 04:21:45.089"></status>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <doc>Verifies that current page title equals ``title``.</doc>
@@ -328,15 +365,15 @@
 </arguments>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20220328 03:51:18.216" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-33.png"&gt;&lt;img src="selenium-screenshot-33.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20220328 03:51:18.216" starttime="20220328 03:51:17.915"></status>
+<msg timestamp="20220328 04:21:47.525" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-45.png"&gt;&lt;img src="selenium-screenshot-45.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220328 04:21:47.525" starttime="20220328 04:21:47.179"></status>
 </kw>
-<msg timestamp="20220328 03:51:18.217" level="FAIL">Title should have been 'nopcommerce demo start' but was 'nopCommerce demo store'.</msg>
-<status status="FAIL" endtime="20220328 03:51:18.218" starttime="20220328 03:51:17.900"></status>
+<msg timestamp="20220328 04:21:47.527" level="FAIL">Title should have been 'nopcommerce demo start' but was 'nopCommerce demo store'.</msg>
+<status status="FAIL" endtime="20220328 04:21:47.527" starttime="20220328 04:21:47.156"></status>
 </kw>
-<status status="FAIL" endtime="20220328 03:51:18.218" critical="yes" starttime="20220328 03:51:11.829">Title should have been 'nopcommerce demo start' but was 'nopCommerce demo store'.</status>
+<status status="FAIL" endtime="20220328 04:21:47.528" critical="yes" starttime="20220328 04:21:42.357">Title should have been 'nopcommerce demo start' but was 'nopCommerce demo store'.</status>
 </test>
-<status status="FAIL" endtime="20220328 03:51:18.221" starttime="20220328 03:51:11.821"></status>
+<status status="FAIL" endtime="20220328 04:21:47.534" starttime="20220328 04:21:42.344"></status>
 </suite>
 <suite source="/suites/robot_framework.robot" id="s1-s4" name="Robot Framework">
 <test id="s1-s4-t1" name="Foo Test Case">
@@ -345,17 +382,17 @@
 <arguments>
 <arg>%{USERNAME}</arg>
 </arguments>
-<msg timestamp="20220328 03:51:18.236" level="INFO">Ipatios Asmanidis</msg>
-<status status="PASS" endtime="20220328 03:51:18.237" starttime="20220328 03:51:18.236"></status>
+<msg timestamp="20220328 04:21:47.555" level="INFO">Ipatios Asmanidis</msg>
+<status status="PASS" endtime="20220328 04:21:47.555" starttime="20220328 04:21:47.554"></status>
 </kw>
 <doc>Created by Ipatios Asmanidis</doc>
 <tags>
 <tag>RobotTestCase</tag>
 <tag>RobotWebPage</tag>
 </tags>
-<status status="PASS" endtime="20220328 03:51:18.237" critical="yes" starttime="20220328 03:51:18.233"></status>
+<status status="PASS" endtime="20220328 04:21:47.555" critical="yes" starttime="20220328 04:21:47.552"></status>
 </test>
-<status status="PASS" endtime="20220328 03:51:18.238" starttime="20220328 03:51:18.226"></status>
+<status status="PASS" endtime="20220328 04:21:47.556" starttime="20220328 04:21:47.542"></status>
 </suite>
 <suite source="/suites/select_radioButton_checkBoxes.robot" id="s1-s5" name="select radioButton checkBoxes">
 <test id="s1-s5-t1" name="TestingInputBox">
@@ -369,8 +406,8 @@
 <assign>
 <var>${options}</var>
 </assign>
-<msg timestamp="20220328 03:51:18.252" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7fd87d36af10&gt;</msg>
-<status status="PASS" endtime="20220328 03:51:18.253" starttime="20220328 03:51:18.252"></status>
+<msg timestamp="20220328 04:21:47.573" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f28dc610110&gt;</msg>
+<status status="PASS" endtime="20220328 04:21:47.573" starttime="20220328 04:21:47.572"></status>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -379,7 +416,7 @@
 <arg>add_argument</arg>
 <arg>--no-sandbox</arg>
 </arguments>
-<status status="PASS" endtime="20220328 03:51:18.253" starttime="20220328 03:51:18.253"></status>
+<status status="PASS" endtime="20220328 04:21:47.576" starttime="20220328 04:21:47.574"></status>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
@@ -389,8 +426,8 @@
 <assign>
 <var>${prefs}</var>
 </assign>
-<msg timestamp="20220328 03:51:18.255" level="INFO">${prefs} = {u'download.default_directory': u'/tmp'}</msg>
-<status status="PASS" endtime="20220328 03:51:18.255" starttime="20220328 03:51:18.254"></status>
+<msg timestamp="20220328 04:21:47.577" level="INFO">${prefs} = {u'download.default_directory': u'/tmp'}</msg>
+<status status="PASS" endtime="20220328 04:21:47.578" starttime="20220328 04:21:47.576"></status>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -400,7 +437,7 @@
 <arg>prefs</arg>
 <arg>${prefs}</arg>
 </arguments>
-<status status="PASS" endtime="20220328 03:51:18.256" starttime="20220328 03:51:18.256"></status>
+<status status="PASS" endtime="20220328 04:21:47.579" starttime="20220328 04:21:47.578"></status>
 </kw>
 <kw name="Create Webdriver" library="SeleniumLibrary">
 <doc>Creates an instance of Selenium WebDriver.</doc>
@@ -408,18 +445,18 @@
 <arg>Chrome</arg>
 <arg>chrome_options=${options}</arg>
 </arguments>
-<msg timestamp="20220328 03:51:18.257" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" endtime="20220328 03:51:20.708" starttime="20220328 03:51:18.256"></status>
+<msg timestamp="20220328 04:21:47.580" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" endtime="20220328 04:21:50.283" starttime="20220328 04:21:47.579"></status>
 </kw>
-<status status="PASS" endtime="20220328 03:51:20.709" starttime="20220328 03:51:18.251"></status>
+<status status="PASS" endtime="20220328 04:21:50.284" starttime="20220328 04:21:47.571"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the active browser instance to the provided ``url``.</doc>
 <arguments>
 <arg>${url}</arg>
 </arguments>
-<msg timestamp="20220328 03:51:20.711" level="INFO">Opening url 'https://gallery.wufoo.com/forms/?formname=q192izas04nvc5l&amp;embed=1&amp;embedKey=q192izas04nvc5l840693&amp;entsource=&amp;referrer=https:wuslashwuslashwww.wufoo.comwuslashgallerywuslashtemplateswuslashformswuslash#public'</msg>
-<status status="PASS" endtime="20220328 03:51:24.926" starttime="20220328 03:51:20.710"></status>
+<msg timestamp="20220328 04:21:50.287" level="INFO">Opening url 'https://gallery.wufoo.com/forms/?formname=q192izas04nvc5l&amp;embed=1&amp;embedKey=q192izas04nvc5l840693&amp;entsource=&amp;referrer=https:wuslashwuslashwww.wufoo.comwuslashgallerywuslashtemplateswuslashformswuslash#public'</msg>
+<status status="PASS" endtime="20220328 04:21:53.630" starttime="20220328 04:21:50.286"></status>
 </kw>
 <kw name="Select Radio Button" library="SeleniumLibrary">
 <doc>Sets radio button group ``group_name`` to ``value``.</doc>
@@ -427,16 +464,16 @@
 <arg>Field5</arg>
 <arg>I am not a member of NAME gym</arg>
 </arguments>
-<msg timestamp="20220328 03:51:24.928" level="INFO">Selecting 'I am not a member of NAME gym' from radio button 'Field5'.</msg>
-<status status="PASS" endtime="20220328 03:51:25.098" starttime="20220328 03:51:24.927"></status>
+<msg timestamp="20220328 04:21:53.633" level="INFO">Selecting 'I am not a member of NAME gym' from radio button 'Field5'.</msg>
+<status status="PASS" endtime="20220328 04:21:53.872" starttime="20220328 04:21:53.631"></status>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20220328 03:51:25.171" starttime="20220328 03:51:25.098"></status>
+<status status="PASS" endtime="20220328 04:21:53.964" starttime="20220328 04:21:53.873"></status>
 </kw>
-<status status="PASS" endtime="20220328 03:51:25.171" critical="yes" starttime="20220328 03:51:18.249"></status>
+<status status="PASS" endtime="20220328 04:21:53.964" critical="yes" starttime="20220328 04:21:47.566"></status>
 </test>
-<status status="PASS" endtime="20220328 03:51:25.174" starttime="20220328 03:51:18.242"></status>
+<status status="PASS" endtime="20220328 04:21:53.968" starttime="20220328 04:21:47.558"></status>
 </suite>
 <suite source="/suites/virtual_display.robot" id="s1-s6" name="Virtual Display">
 <test id="s1-s6-t1" name="Open Google">
@@ -447,7 +484,7 @@
 <arg>1920</arg>
 <arg>1080</arg>
 </arguments>
-<status status="PASS" endtime="20220328 03:51:25.322" starttime="20220328 03:51:25.321"></status>
+<status status="PASS" endtime="20220328 04:21:54.159" starttime="20220328 04:21:54.158"></status>
 </kw>
 <kw name="Open Chrome Browser">
 <kw name="Evaluate" library="BuiltIn">
@@ -459,8 +496,8 @@
 <assign>
 <var>${options}</var>
 </assign>
-<msg timestamp="20220328 03:51:25.325" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7fd87d2a5d10&gt;</msg>
-<status status="PASS" endtime="20220328 03:51:25.325" starttime="20220328 03:51:25.324"></status>
+<msg timestamp="20220328 04:21:54.161" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f28dc5a5250&gt;</msg>
+<status status="PASS" endtime="20220328 04:21:54.162" starttime="20220328 04:21:54.161"></status>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -469,7 +506,7 @@
 <arg>add_argument</arg>
 <arg>--no-sandbox</arg>
 </arguments>
-<status status="PASS" endtime="20220328 03:51:25.326" starttime="20220328 03:51:25.325"></status>
+<status status="PASS" endtime="20220328 04:21:54.163" starttime="20220328 04:21:54.162"></status>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
@@ -479,8 +516,8 @@
 <assign>
 <var>${prefs}</var>
 </assign>
-<msg timestamp="20220328 03:51:25.327" level="INFO">${prefs} = {u'download.default_directory': u'/tmp'}</msg>
-<status status="PASS" endtime="20220328 03:51:25.327" starttime="20220328 03:51:25.326"></status>
+<msg timestamp="20220328 04:21:54.165" level="INFO">${prefs} = {u'download.default_directory': u'/tmp'}</msg>
+<status status="PASS" endtime="20220328 04:21:54.165" starttime="20220328 04:21:54.163"></status>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -490,7 +527,7 @@
 <arg>prefs</arg>
 <arg>${prefs}</arg>
 </arguments>
-<status status="PASS" endtime="20220328 03:51:25.328" starttime="20220328 03:51:25.328"></status>
+<status status="PASS" endtime="20220328 04:21:54.167" starttime="20220328 04:21:54.165"></status>
 </kw>
 <kw name="Create Webdriver" library="Selenium2Library">
 <doc>Creates an instance of Selenium WebDriver.</doc>
@@ -498,26 +535,26 @@
 <arg>Chrome</arg>
 <arg>chrome_options=${options}</arg>
 </arguments>
-<msg timestamp="20220328 03:51:25.329" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" endtime="20220328 03:51:27.901" starttime="20220328 03:51:25.328"></status>
+<msg timestamp="20220328 04:21:54.168" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" endtime="20220328 04:21:56.996" starttime="20220328 04:21:54.167"></status>
 </kw>
-<status status="PASS" endtime="20220328 03:51:27.902" starttime="20220328 03:51:25.322"></status>
+<status status="PASS" endtime="20220328 04:21:57.007" starttime="20220328 04:21:54.159"></status>
 </kw>
 <kw name="Go To" library="Selenium2Library">
 <doc>Navigates the active browser instance to the provided ``url``.</doc>
 <arguments>
 <arg>http://google.com</arg>
 </arguments>
-<msg timestamp="20220328 03:51:27.904" level="INFO">Opening url 'http://google.com'</msg>
-<status status="PASS" endtime="20220328 03:51:31.620" starttime="20220328 03:51:27.903"></status>
+<msg timestamp="20220328 04:21:57.014" level="INFO">Opening url 'http://google.com'</msg>
+<status status="PASS" endtime="20220328 04:21:59.347" starttime="20220328 04:21:57.008"></status>
 </kw>
 <kw name="Get Title" library="Selenium2Library">
 <doc>Returns the title of current page.</doc>
 <assign>
 <var>${title}</var>
 </assign>
-<msg timestamp="20220328 03:51:31.635" level="INFO">${title} = Google</msg>
-<status status="PASS" endtime="20220328 03:51:31.635" starttime="20220328 03:51:31.621"></status>
+<msg timestamp="20220328 04:21:59.397" level="INFO">${title} = Google</msg>
+<status status="PASS" endtime="20220328 04:21:59.397" starttime="20220328 04:21:59.347"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -525,27 +562,27 @@
 <arg>Google</arg>
 <arg>${title}</arg>
 </arguments>
-<status status="PASS" endtime="20220328 03:51:31.636" starttime="20220328 03:51:31.635"></status>
+<status status="PASS" endtime="20220328 04:21:59.398" starttime="20220328 04:21:59.397"></status>
 </kw>
-<status status="PASS" endtime="20220328 03:51:31.636" critical="yes" starttime="20220328 03:51:25.319"></status>
+<status status="PASS" endtime="20220328 04:21:59.399" critical="yes" starttime="20220328 04:21:54.156"></status>
 </test>
-<status status="PASS" endtime="20220328 03:51:31.639" starttime="20220328 03:51:25.189"></status>
+<status status="PASS" endtime="20220328 04:21:59.402" starttime="20220328 04:21:53.984"></status>
 </suite>
-<status status="FAIL" endtime="20220328 03:51:31.646" starttime="20220328 03:50:41.644"></status>
+<status status="FAIL" endtime="20220328 04:21:59.425" starttime="20220328 04:20:56.481"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="5">Critical Tests</stat>
-<stat fail="1" pass="5">All Tests</stat>
+<stat fail="2" pass="4">Critical Tests</stat>
+<stat fail="2" pass="4">All Tests</stat>
 </total>
 <tag>
 <stat fail="0" pass="1">RobotTestCase</stat>
 <stat fail="0" pass="1">RobotWebPage</stat>
 </tag>
 <suite>
-<stat fail="1" id="s1" name="Suites" pass="5">Suites</stat>
+<stat fail="2" id="s1" name="Suites" pass="4">Suites</stat>
 <stat fail="0" id="s1-s1" name="Accesslogin" pass="1">Suites.Accesslogin</stat>
-<stat fail="0" id="s1-s2" name="dropDown listBox" pass="1">Suites.dropDown listBox</stat>
+<stat fail="1" id="s1-s2" name="dropDown listBox" pass="0">Suites.dropDown listBox</stat>
 <stat fail="1" id="s1-s3" name="handleInputBox" pass="0">Suites.handleInputBox</stat>
 <stat fail="0" id="s1-s4" name="Robot Framework" pass="1">Suites.Robot Framework</stat>
 <stat fail="0" id="s1-s5" name="select radioButton checkBoxes" pass="1">Suites.select radioButton checkBoxes</stat>
