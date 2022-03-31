@@ -20,7 +20,7 @@ Testing_wait_timeouts
     log to console        ${implicit_time}
 
 
-    set selenium implicit wait    1o seconds
+    set selenium implicit wait    10 seconds
 
 
     ${implicit_time}=    get selenium implicit wait

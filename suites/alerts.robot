@@ -17,7 +17,13 @@ My_test_case
 
     click element    xpath://*[@id="HTML9"]/div[1]/button
     sleep            3
-    handle alert     accept
+    #handle alert     accept
+    #handle alert     dismiss
+    #handle alert     leave  ## LEAVE to the alert component without action
+    aelrt should be present     Press a button!     #the content of the alert component will be "Press a button!" for to PASS
+    
+
+
 
 
 
