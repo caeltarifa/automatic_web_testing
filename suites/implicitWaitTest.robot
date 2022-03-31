@@ -17,14 +17,14 @@ Testing_wait_timeouts
     GoTo                   ${url_register}
 
     ${implicit_time}=    get selenium implicit wait
-    log to consoe        ${implicit_time}
+    log to console        ${implicit_time}
 
 
     set selenium implicit wait    1o seconds
 
 
     ${implicit_time}=    get selenium implicit wait
-    log to consoe        ${implicit_time}
+    log to console        ${implicit_time}
 
 
 
