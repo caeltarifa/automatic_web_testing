@@ -1,0 +1,17 @@
+1648693743720	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Cv0qRHMvPV2I"
+[GFX1-]: glxtest: libpci missing
+
+(firefox:338): LIBDBUSMENU-GLIB-WARNING **: Unable to get session bus: Failed to execute child process "dbus-launch" (No such file or directory)
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1648693765418	Marionette	INFO	Listening on port 37193
+1648693765567	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://demowebshop.tricentis.com/Scripts/jquery-1.10.2.min.js, line 19: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1648693774951	Marionette	WARN	TimedPromise timed out after 5000 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+GeckoDriver.prototype.maximizeWindow@chrome://marionette/content/driver.js:3302:11
+1648693774966	Marionette	INFO	Stopped listening on port 37193
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
